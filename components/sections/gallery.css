@@ -126,6 +126,7 @@
 .gallery_item-year,
 .gallery_item-width,
 .gallery_item-height {
+    font-family: "TRYGrtskMediumZetta", sans-serif;
     color: var(--background);
     position: absolute;
 }
@@ -146,19 +147,29 @@
 }
 
 .gallery_item-title {
-    bottom: 2rem;
+    bottom: 4rem;
     left: 2rem;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: lighter;
+    text-transform: uppercase;
     padding: 7px 12px;
 }
 
 .gallery_item-width {
-    bottom: 1rem;
+    bottom: 0.5rem;
     left: 2rem;
     font-size: 18px;
-    font-weight: bold;
     padding: 7px 12px;
+    font-weight: lighter;
+    color: var(--background);
+}
+.gallery_item-height {
+    bottom: 2rem;
+    left: 2rem;
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 7px 12px;
+    color: var(--background);
 }
 
 .thumbnail_wrapper.active::after {
