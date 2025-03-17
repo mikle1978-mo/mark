@@ -1,0 +1,16 @@
+.offer_title {
+    text-align: center;
+}
+
+.offer_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 95px;
+    padding: 48px 0;
+    font-size: 20px;
+}
+
+.offer_left {
+    text-align: right;
+}

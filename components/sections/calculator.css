@@ -1,0 +1,105 @@
+.calculator_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+.calculator_title-wrapper {
+    width: 50%;
+}
+.calculator_slider {
+    width: 100%;
+    height: 636px;
+    background: #1f2226;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    overflow: hidden;
+    padding: 32px;
+    background-color: var(--foreground);
+    color: var(--neutral);
+}
+.calculator_slider h3 {
+    color: var(--background);
+    font-family: "TRYGrtskMediumZetta", sans-serif;
+    font-weight: 400;
+    align-self: flex-start;
+    font-size: 70px;
+    letter-spacing: -0.02em;
+    text-transform: none;
+}
+.calculator_items {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.calculator_item {
+    width: 219px;
+    text-align: center;
+}
+
+.calculator_img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.calculator_text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.calculator_pagination {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 3fr 4fr;
+    gap: 9px;
+}
+.calculator_button-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 9px;
+}
+
+.calculator_button,
+.calculator_button-left,
+.calculator_button-right {
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    color: var(--neutral);
+    border: 1px solid var(--neutral);
+    border-radius: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.calculator_button-active,
+.calculator_button-left-active,
+.calculator_button-right-active {
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.calculator_button-left,
+.calculator_button-right {
+    display: flex;
+    gap: 16px;
+}

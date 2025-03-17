@@ -1,0 +1,76 @@
+.contact_form_row {
+    width: 100%;
+    height: 456px;
+    background: var(--primary);
+    color: var(--background);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+}
+
+.contact_form-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 26px;
+    height: 100%;
+}
+.contact_form_title {
+    font-family: "TRYGrtskMediumZetta", sans-serif;
+    font-size: 70px;
+    font-weight: lighter;
+    text-transform: none;
+}
+
+.contact_form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.contact_form input {
+    width: 100%;
+    padding: 24px;
+    font-size: 16px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.3);
+    color: var(--background);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+}
+.contact_form input::placeholder {
+    font-size: 16px;
+    color: var(--background);
+    text-transform: uppercase;
+}
+
+.contact_form button {
+    grid-column: span 2;
+    width: 100%;
+    height: 80px;
+    padding: 12px;
+    font-size: 16px;
+    color: var(--primary);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: var(--background);
+    text-transform: uppercase;
+}
+
+.contact_form_img_wrapper {
+    margin-left: -16px;
+}
+
+@media (max-width: 480px) {
+    .contact_form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact_form button {
+        grid-column: span 1;
+    }
+}

@@ -1,0 +1,37 @@
+.advantages_row {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.advantages_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 9px;
+}
+.advantages_item {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 32px;
+    gap: 24px;
+
+    /* Rectangle 143 */
+
+    box-sizing: border-box;
+
+    width: 472px;
+    height: 348px;
+
+    background: rgba(114, 124, 140, 0.05);
+    border: 1px solid rgba(114, 124, 140, 0.35);
+    border-radius: 12px;
+}
+.advantages_img {
+    width: 64px;
+    height: 64px;
+}
+
+.advantages_Item-title {
+    font-size: 40px;
+}

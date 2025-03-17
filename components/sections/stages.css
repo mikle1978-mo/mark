@@ -1,0 +1,79 @@
+.stages_column {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.stages_items {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+.stages_items::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 234px;
+    right: 0;
+    border-top: 1px dashed var(--primary);
+}
+
+.stages_item {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 12px;
+}
+.stages_item::after {
+    content: "";
+    width: 1px;
+    height: 91px;
+    position: absolute;
+    top: 41px;
+    right: 0;
+    background-color: var(--neutral);
+}
+.stages_item:last-child::after {
+    display: none;
+}
+
+.stages_item-title {
+    font-family: "TRYGrtskMediumZetta";
+    font-size: 20px;
+    font-weight: bolder;
+    min-height: 70px;
+}
+
+.stages_item-text {
+    color: var(--neutral);
+}
+
+.stages_images {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.stages_number {
+    background-color: var(--primary);
+    width: 26px;
+    height: 26px;
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--background);
+    font-size: 20px;
+}
+.stages_icon-wrapper {
+    background-color: var(--primary);
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--background);
+    font-size: 20px;
+}

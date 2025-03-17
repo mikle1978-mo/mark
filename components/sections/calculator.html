@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/components/sections/calculator.css" />
+<script type="module" src="/components/sections/calculator.js" defer></script>
+
+<div class="container">
+    <div class="calculator_column">
+        <div class="calculator_title-wrapper">
+            <h2 class="calculator_title">УЗНАЙ ЦЕНУ ЗАБОРА
+                ЗА 1 МИНУТУ!</h2>
+        </div>
+        <p>
+            Ответь на 5 вопросов и получи бесплатный расчет в whatsApp!
+        </p>
+        <div class="calculator_slider">
+            <h3>Какой тип забора вам нужен?</h3>
+            <div id="calculator-items" class="calculator_items"></div>
+            <div class="calculator_pagination">
+                <button class="calculator_button-left" id="calculator_button-left"><svg width="15" height="15"
+                        viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.58912 6.53582L8.61788 1.36364L7.29206 0L0 7.50006L7.29206 15L8.61788 13.6364L3.58912 8.4643H15V6.53582H3.58912Z"
+                            fill="currentColor" />
+                    </svg><span>предыдущий вопрос</span>
+                </button>
+                <div class="calculator_button-wrapper">
+                    <button class="calculator_button calculator_button-active">1</button>
+                    <button class="calculator_button">2</button>
+                    <button class="calculator_button">...</button>
+                    <button class="calculator_button">4</button>
+                    <button class="calculator_button">5</button>
+                </div>
+                <button class="calculator_button-left calculator_button-active" id="calculator_button-right ">
+                    <span>следующий вопрос</span><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.4109 6.53582L6.38212 1.36364L7.70794 0L15 7.50006L7.70794 15L6.38212 13.6364L11.4109 8.4643H0V6.53582H11.4109Z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
